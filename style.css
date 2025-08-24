@@ -1,0 +1,82 @@
+body {
+  font-family: 'Poppins', sans-serif;
+   background: linear-gradient(135deg, #89f7fe, #66a6ff);
+  text-align: center;
+  padding: 40px;
+  color: #333;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.question {
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+
+.question.active {
+  display: block;
+  animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+button {
+  background: #66a6ff;
+  border-radius: 25px;
+  padding: 12px 30px;
+  font-weight: 600;
+  transition: transform 0.2s, background 0.3s;
+}
+button:hover {
+  background: #89f7fe;
+  transform: scale(1.05);
+}
+
+
+.unlocked {
+  margin-top: 20px;
+  padding: 15px;
+  background: #fff0f5;
+  border-radius: 12px;
+  font-style: italic;
+}
+
+#final-message {
+  display: none;
+  animation: fadeIn 1.5s ease-in-out;
+  background: rgba(255,255,255,0.9);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+
+/* 🎈 Globos animados */
+.balloon {
+  position: fixed;
+  bottom: -150px;
+  width: 60px;
+  height: 80px;
+  background: red;
+  border-radius: 50%;
+  animation: floatUp 6s linear infinite;
+  z-index: 9999;
+}
+@keyframes floatUp {
+  from {transform: translateY(0);}
+  to {transform: translateY(-110vh);}
+}
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(40px);}
+  to {opacity: 1; transform: translateY(0);}
+}
