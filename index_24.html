@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Juego Misterioso para Ti ❤️</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style_24.css">
+</head>
+<body>
+  <h1>🎁 El misterio de los 23 🎁</h1>
+  <p>Responde las preguntas y desbloquea recuerdos especiales...</p>
+
+  <!-- Pregunta 1 -->
+  <div class="question active" id="q1">
+    <h3>1. ¿Sabes que es lo que más me gusta de ti?</h3>
+    <button onclick="checkAnswer(1, 'Tu inteligencia')">Tu inteligencia</button>
+    <button onclick="checkAnswer(1, 'Tu paciencia')">Tu paciencia</button>
+    <button onclick="checkAnswer(1, 'Que nunca te molestas')">Que nunca te molestas</button>
+    <div class="unlocked" id="unlock1"></div>
+  </div>
+
+  <!-- Pregunta 2 -->
+  <div class="question" id="q2">
+    <h3>2. ¿Que comida se volvió nuestra favorita?</h3>
+    <button onclick="checkAnswer(2, 'Un mostrito')">Un mostrito</button>
+    <button onclick="checkAnswer(2, 'Caviar')">Caviar</button>
+    <button onclick="checkAnswer(2, 'Shawarma el egipcio')">Shawarma el egipcio</button>
+    <div class="unlocked" id="unlock2"></div>
+  </div>
+
+  <!-- Pregunta 3 -->
+  <div class="question" id="q3">
+    <h3>3. ¿A qué lugar volveríamos juntos?</h3>
+    <button onclick="checkAnswer(3, 'El parque de las leyendas')">El parque de las leyendas</button>
+    <button onclick="checkAnswer(3, 'A ver adornos navideños')">A ver adornos navideños</button>
+    <button onclick="checkAnswer(3, 'A un concierto')">A un concierto</button>
+    <div class="unlocked" id="unlock3"></div>
+  </div>
+
+  <!-- Mensaje final -->
+  <div id="final-message">
+    <h2>🎉 ¡Feliz cumpleaños mi amor! 🎉</h2>
+    <p>Eres mi misterio favorito, la razón de mi alegría y la persona más maravillosa que conozco.</p>
+    <p>Gracias por existir 💕</p>
+  </div>
+
+  <!-- Música -->
+  <audio id="bg-music" src="alert.mp3"></audio>
+
+  <script src="script_24.js"></script>
+</body>
+</html>
