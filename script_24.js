@@ -28,15 +28,23 @@ function checkAnswer(questionNumber, answer) {
 function endGame() {
   document.getElementById("q3").classList.remove("active");
   document.getElementById("final-message").style.display = "block";
-  playMusic();
   releaseBalloons();
+  endQuiz();
 }
 
-// Música
-function playMusic() {
-  const music = document.getElementById("bg-music");
-  music.play();
+function endQuiz() {
+  // Oculta el cuestionario
+  document.getElementById("quiz-container").style.display = "none";
+
+  // Muestra el video
+  const videoContainer = document.getElementById("final-video");
+  const video = document.getElementById("video");
+  videoContainer.style.display = "block";
+
+  // Reproduce automáticamente
+  video.play();
 }
+
 
 // 🎈 Globos animados
 function releaseBalloons() {
